@@ -2,10 +2,10 @@ import React from 'react';
 import Flag from "./Flag";
 import TextField from "./TextField";
 
-const FlagWithName = props =>
+const FlagWithName = ({ countryFlag, name }) =>
     <div className="pa2" style={{ display: 'flex' }}>
-        <Flag countryFlag={props.countryFlag} />
-        <TextField text={props.name} />
+        <Flag countryFlag={countryFlag} />
+        <TextField text={name} />
     </div>
 
 export default FlagWithName;

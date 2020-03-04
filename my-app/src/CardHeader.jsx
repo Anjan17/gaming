@@ -1,7 +1,7 @@
 import React from 'react';
 import { node } from 'prop-types';
 
-const CardHeader = props => <div className="header">{props.title}</div>
+const CardHeader = ({ title }) => <div className="header">{title}</div>
 
 CardHeader.propTypes = {
     title: node.isRequired
